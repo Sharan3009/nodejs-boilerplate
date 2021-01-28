@@ -15,6 +15,7 @@
     - `Mongoose` is setup to interact with the database which is `MongoDB` in our case.
     - All the required actions are consolidated in `appStartUtil.ts` and they are chained in a neat way in the main file. Some of the required actions are including `morgon`, `helmet`, `body-parser`, `cookie-parser` and the automatic inclusion of all the mongoose models and api routes.
     - Added `socket.io` for socket server and connection. Separate file has been created for socket connection and it's respective connection event. Although a static instance variable is introduced in the class to ensure only single socket connection, but even without that it works just fine.
+    - This also supports hot reloading of the components with the help of `nodemon`
 
 ### Some general instructions
 - To start the app `npm start`. This will compile the ts and run the node server.
